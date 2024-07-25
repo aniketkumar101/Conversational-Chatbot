@@ -1,14 +1,12 @@
-# from dotenv import load_env
-# load_dotenv()
+from dotenv import load_dotenv
+load_dotenv()
 import os
 import streamlit as st
 import google.generativeai as genai
 
 
 # Configure the API key for the generative AI model
-# genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
-genai.configure(api_key="AIzaSyAwb57cVSjGyEZK7tr_I9joWQ2VE02GY2k")
-
+genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
 
 # Initialize our streamlit app
 st.set_page_config(page_title="Chatbot")
